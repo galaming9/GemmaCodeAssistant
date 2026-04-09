@@ -9,7 +9,7 @@ class GemmaEngine(private val context: Context) {
 
     private var llmInference: LlmInference? = null
     var isReady = false
-    private val MODEL_PATH = "/sdcard/Download/gemma4.task"
+    private val MODEL_PATH = "/storage/emulated/0/Documents/Gemma4/gemma4.task"
     private val SYSTEM_PROMPT = """
         You are an expert coding assistant.
         Answer programming questions clearly with working code examples.
