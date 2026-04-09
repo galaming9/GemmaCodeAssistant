@@ -22,8 +22,6 @@ class GemmaEngine(private val context: Context) {
             val options = LlmInference.LlmInferenceOptions.builder()
                 .setModelPath(MODEL_PATH)
                 .setMaxTokens(2048)
-                .setTemperature(0.7f)
-                .setTopK(40)
                 .setRandomSeed(101)
                 .build()
             llmInference = LlmInference.createFromOptions(context, options)
